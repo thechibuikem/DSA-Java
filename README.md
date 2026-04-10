@@ -1,4 +1,4 @@
-# DSA Java
+# DSA Java  <img alt="java" width="40px" src="/src/Java-Dark.svg" />
 
 > A collection of all dsa problems I solve in Java with notes as to why I solved it the way I did.
 
