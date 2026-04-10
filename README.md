@@ -19,7 +19,7 @@ This is not a dump of answers — it’s a structured system for building real p
 
 * Clean and readable Java solutions
 * Inline explanations (why the approach works)
-* Time & space complexity analysis
+* Projected to contain Time & space complexity analysis
 * Projected to cover core problem-solving patterns:
 
   * Sliding Window
@@ -40,8 +40,8 @@ Each problem is organized into its own directory:
   └── 1.java   // solution + explanation inside
   └── 2.java   // alternative solution
 ```
+```first line holds the beats & date of soln.```
 
-```first line holds the beats date of soln.```
 
 ---
 
