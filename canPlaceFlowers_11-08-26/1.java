@@ -1,41 +1,34 @@
-class Solution {
-    public boolean canPlaceFlowers(int[] flowerbed, int n) {
-        // int i = 0;
-        int firstZero = -1;
-        int counter = 0;
-        // int j = 0;
+/*
+Runtime: 1ms
+Beats: 98.60%*/
 
-// first find the first zero in our array via linear search i.e o(n)
-for (int a = 0; a < flowerbed.length; a++){
-    if (flowerbed[a] == 0){
-        // n = n - 1;
-        firstZero = a;
-        break;
-    }
-    else {
-    return false;
-    }
-}
 
-if (firstZero == -1){
-    return false;
-}
-
-while (counter < flowerbed.length || n >= 0 || n <= flowerbed.length){
-        if (flowerbed[firstZero + 2] == 0){
-           counter = counter + 1;
-            n = n-1;
+class Solution{
+    public boolean canPlaceFlowers(int[] flowerbed, int n){
+        for (int i = 0; (i <flowerbed.length) && (n > 0); i++){
+            if ( 
+                flowerbed[i] == 0 &&
+                i == 0 || (flowerbed[i-1] == 0) &&
+                i == flowerbed.length - 1 || flowerbed[i+ 1]== 0
+            ){
+                n --; //plant
+                i ++; //skip cause it's been corrupted
+            }
         }
-
-        if (n==0){
-            return true;
-        }
-        // else{
-        //     return false;
-        // }
-        }
-        return true;
+        return n == 0;
     }
 }
 
-// fails on edge-cases needs strong refactoring
+/* 
+This method follows straight forward approach and principle
+- for:
+    + each port in our flower bed
+    + as long as there are flowers to plant
+- Check:
+    + is this port empty; and
+    + is it's left-door neighnour empty, or is this the first element; and
+    + is it's right-door neighnour empty, or is this the last element
+- plant a seed if these conditions are met
+- if we planted a seed; skip the next iteration, because we can't plant anymore
+- return true if we planted all seeds.
+*/
