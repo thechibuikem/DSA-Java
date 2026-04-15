@@ -33,7 +33,7 @@ class Solution {
     + characters of word1 & word2 are appended to sb in an alternating order.
     + loop breaks once length of word1 or word2 is exceeded
 
-    - On loop termination, the remaining substrings of word1 & word2 are appended to the string builders instance, with one unavoidably always being an emoty string ""
+    - On loop termination, the remaining substrings of word1 & word2 are appended to the string builders instance, with one unavoidably always being an empty string ""
     - finally we convert our string builder instance to a string, and return it
     _ this method follows an o(n) time complexity
 */ 
