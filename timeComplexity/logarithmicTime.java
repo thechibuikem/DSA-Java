@@ -18,11 +18,11 @@ public class logarithmicTime {
             }
 
             else if (x > list[mid]){
-                low = mid + 1;
+                low = mid + 1; //target is bigger than mid
             }
 
             else if (x < list[mid]){
-                high = mid - 1;
+                high = mid - 1; //target is smaller than mid
             } 
         }
         return -1;
