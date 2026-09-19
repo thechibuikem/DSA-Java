@@ -1,5 +1,5 @@
 ````markdown
-# 🧠 The Big-O Complexity Chart
+# The Big-O Complexity Chart
 
 The main idea is:
 
@@ -228,7 +228,7 @@ Look at **how many times the innermost work actually runs**.
 
 ---
 
-# 🧠 The ladder to memorize
+#  The ladder to memorize
 
 ```text
 O(1)
